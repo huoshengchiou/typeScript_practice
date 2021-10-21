@@ -150,3 +150,15 @@ let b = safeParseJson("123") as string;
 console.log((<string>acceppt).length);
 
 let d: any & unknown;
+
+interface I1 {
+  a: string;
+  b: number;
+}
+
+interface I2 {
+  c: Boolean;
+  b: string;
+}
+
+interface I12 extends I1, I2 {}
